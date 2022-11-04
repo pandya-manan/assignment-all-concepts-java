@@ -1,0 +1,10 @@
+1.Binary Search Programs-> Binary Search for string values, Binary Search for integer values
+2.Linear Search-> integer values, for string can search for substring value as well
+3.LinkedList problem statement
+4.Employee OOP Prob-> Increase the salary of given emp id by 10%,Increase the salary of all emp by 10%.
+					
+5.Student OOP Prob->  Create Student POJO class,Create array of student class objects and print them.
+
+6.Removal of duplicate elements in the array
+
+7.Sorting algorithms->Selection,Insertion,Bubble,Merge
