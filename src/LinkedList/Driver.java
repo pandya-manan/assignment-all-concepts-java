@@ -33,20 +33,20 @@ public class Driver {
 		linkedList.displayList(head);
 		System.out.println();
 		
-		//Inserting at front end of the linked list
+		//Inserting at any end of the linked list
 		linkedList.InsertPos(head, 2, 12);
 		System.out.print("The Linked List after addition of element: ");
 		linkedList.displayList(head);
 		System.out.println();
 		
 		//Inserting at starting
-		linkedList.insertAtStart(head, 1, 43);
+		head=linkedList.addNode(head,43);
 		System.out.print("The Linked List after addition of element: ");
 		linkedList.displayList(head);
 		System.out.println();
 		
 		//Inserting at end of the linkedList
-		linkedList.InsertPos(head, 11, 22);
+		linkedList.InsertPos(head, 12, 22);
 		System.out.print("The Linked List after addition of element: ");
 		linkedList.displayList(head);
 		System.out.println();
@@ -60,6 +60,12 @@ public class Driver {
 		//Deletion by key 
 		head=linkedList.deleteListByKey(head, 76);
 		System.out.print("The Linked List after deletion by key: ");
+		linkedList.displayList(head);
+		System.out.println();
+		
+		//Reversing a list 
+		head=linkedList.reverse(head);
+		System.out.print("The Linked List after the reversal: ");
 		linkedList.displayList(head);
 		System.out.println();
 

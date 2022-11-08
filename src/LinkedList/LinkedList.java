@@ -98,22 +98,19 @@ public class LinkedList {
         return new Node(data);
     }
     
-	public Node insertAtStart(Node headIncoming, int position,int data)
-	{
-		if(position==1)
-		{
-			Node newNode=new Node(data);
-			newNode.link=headIncoming;
-			headIncoming=newNode;
-			return headIncoming;
-		}
-		else
-		{
-			System.out.println("It is not position 1");
-			return headIncoming;
-		}
-		
-	}
+//	public void insertAtStart(Node headIncoming, int position,int data)
+//	{
+//		
+//		   
+//		    Node new_node = new Node(data);
+//		 
+//		  
+//		    new_node.link = head;
+//		 
+//		  
+//		    head = new_node;
+//		
+//	}
 	
 	/* Insert node any position, checking if possible , no invalid positions allowed
      * Traverse completely, change the reference [previous]->[current]->[new]->[next]
@@ -157,6 +154,25 @@ public class LinkedList {
             return head;
         }
         
+    }
+	
+	//Reversing a linked list
+	/*
+	 * previous->current->nextOne ::----> nextOne->current->previous
+	 */
+	Node reverse(Node nodeIncoming)
+    {
+        Node previous = null;
+        Node current = nodeIncoming;
+        Node nextOne = null;
+        while (current != null) {
+            nextOne = current.link;
+            current.link = previous;
+            previous = current;
+            current = nextOne;
+        }
+        nodeIncoming = previous;
+        return nodeIncoming;
     }
 	
 }

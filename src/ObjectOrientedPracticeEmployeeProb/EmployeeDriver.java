@@ -33,13 +33,13 @@ public class EmployeeDriver {
 		
 		System.out.println("Increasing salary of all employees by 10%");
 		
-		int originalSalary1=employee1.getSalary();
-		int incrementedSalary1=originalSalary1+(int)(0.1*originalSalary1);
-		employee1.setSalary(incrementedSalary1);
+		int originalSalaryEmployee1=employee1.getSalary();
+		int incrementedSalaryEmployee1=originalSalaryEmployee1+(int)(0.1*originalSalaryEmployee1);
+		employee1.setSalary(incrementedSalaryEmployee1);
 		
-		int originalSalary2=employee2.getSalary();
-		int incrementedSalary2=originalSalary2+(int)(0.1*originalSalary2);
-		employee2.setSalary(incrementedSalary2);
+		int originalSalaryEmployee2=employee2.getSalary();
+		int incrementedSalaryEmployee2=originalSalaryEmployee2+(int)(0.1*originalSalaryEmployee2);
+		employee2.setSalary(incrementedSalaryEmployee2);
 		
 		System.out.println("After increment by 10% "+employee1+" "+employee2);
 	}

@@ -3,43 +3,43 @@ package Sorting;
 import java.util.Arrays;
 public class MergeSort {
 	
-	public static void mergeSort(int[] a,int l, int r)
+	public static void mergeSort(int[] array,int left, int right)
 	{
-		if(l<r)
+		if(left<right)
 		{
-			int mid=(l+r)/2;
-			mergeSort(a,l,mid);
-			mergeSort(a,mid+1,r);
-			merge(a,l,mid,r);
+			int mid=(left+right)/2;
+			mergeSort(array,left,mid);
+			mergeSort(array,mid+1,right);
+			merge(array,left,mid,right);
 		}
 	}
 
-	public static void merge(int[] a, int l, int mid, int r)
+	public static void merge(int[] array, int left, int mid, int right)
 	{
 		
-		int i=l;
+		int i=left;
 		int j=mid+1;
-		int k=l;
-		int b[]=new int[100];
-		while(i<=mid && j<=r)
+		int k=left;
+		int dummyArray[]=new int[100];
+		while(i<=mid && j<=right)
 		{
-			if(a[i]<a[j])
+			if(array[i]<array[j])
 			{
-				b[k]=a[i];
+				dummyArray[k]=array[i];
 				i++;
 			}
 			else
 			{
-				b[k]=a[j];
+				dummyArray[k]=array[j];
 				j++;
 			}
 			k++;
 		}
 		if(i>mid)
 		{
-			while(j<=r)
+			while(j<=right)
 			{
-				b[k]=a[j];
+				dummyArray[k]=array[j];
 				k++;
 				j++;
 			}
@@ -48,14 +48,14 @@ public class MergeSort {
 		{
 			while(i<=mid)
 			{
-				b[k]=a[i];
+				dummyArray[k]=array[i];
 				k++;
 				i++;
 			}
 		}
-		for(k=l;k<=r;k++)
+		for(k=left;k<=right;k++)
 		{
-			a[k]=b[k];
+			array[k]=dummyArray[k];
 		}
 		
 	}
