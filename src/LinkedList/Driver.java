@@ -28,38 +28,38 @@ public class Driver {
 		linkedList.searchLinkedList(head, 150); //Negative Case
 		
 		//Inserting at any position in LinkedList
-		linkedList.InsertPos(head, 5, 70);
-		System.out.print("The Linked List after addition of element: ");
+		linkedList.InsertPosition(head, 5, 70);
+		System.out.print("The Linked List after addition of element 70 at position 5: ");
 		linkedList.displayList(head);
 		System.out.println();
 		
 		//Inserting at any end of the linked list
-		linkedList.InsertPos(head, 2, 12);
-		System.out.print("The Linked List after addition of element: ");
+		linkedList.InsertPosition(head, 2, 12);
+		System.out.print("The Linked List after addition of element 12 at position 2: ");
 		linkedList.displayList(head);
 		System.out.println();
 		
 		//Inserting at starting
 		head=linkedList.addNode(head,43);
-		System.out.print("The Linked List after addition of element: ");
+		System.out.print("The Linked List after addition of element 43 at beginning: ");
 		linkedList.displayList(head);
 		System.out.println();
 		
 		//Inserting at end of the linkedList
-		linkedList.InsertPos(head, 12, 22);
-		System.out.print("The Linked List after addition of element: ");
+		linkedList.InsertPosition(head, 12, 22);
+		System.out.print("The Linked List after addition of element 22 at position 12 end of list: ");
 		linkedList.displayList(head);
 		System.out.println();
 		
 		//Delete the list by position given
 		linkedList.deleteListByPosition(head, 2);
-		System.out.print("The Linked List after deletion by position: ");
+		System.out.print("The Linked List after deletion by position number 2: ");
 		linkedList.displayList(head);
 		System.out.println();
 		
 		//Deletion by key 
 		head=linkedList.deleteListByKey(head, 76);
-		System.out.print("The Linked List after deletion by key: ");
+		System.out.print("The Linked List after deletion by key value 76: ");
 		linkedList.displayList(head);
 		System.out.println();
 		

@@ -1,10 +1,28 @@
-1.Binary Search Programs-> Binary Search for string values, Binary Search for integer values
-2.Linear Search-> integer values, for string can search for substring value as well
-3.LinkedList problem statement
-4.Employee OOP Prob-> Increase the salary of given emp id by 10%,Increase the salary of all emp by 10%.
-					
-5.Student OOP Prob->  Create Student POJO class,Create array of student class objects and print them.
-
-6.Removal of duplicate elements in the array
-
-7.Sorting algorithms->Selection,Insertion,Bubble,Merge
+Assignments of Week1 and Week2
+1.Package BinarySearch	
+	BinarySearch Algorithm applied on string and primitive data types
+2.Package com.employee.exception
+	The exception handling tasks given on slack channel
+3.Package EmployeeObjectPractice
+	OOPS tasks given on slack channel related to Employee model and Object
+4.Package InheritanceAndAbstractClassProb
+	Inheritance and abstract class problem statement posted on slack channel. 
+	(Item->mediaItem,writtenItem->Book,JournalPaper,CD,Video)
+	Implemented check out and check in procedures for each of the item
+5.Package LambdaExpressionAssignment
+	Lambda Expression problem statement posted on the slack channel
+6.Package LinearSearch
+	Linear Search programs applied to primitive and String data types
+7.Package LinkedList
+	LinkedList programs
+8.Package ObjectOrientedPracticeEmployeeProb
+	OOPs tasks posted on slack channel related to Employee Model and Object
+9.Package ObjectOrientedProgAssignmentStudent
+	OOPs tasks posted on the slack channel related to Student Model and Object
+10.Package practice
+	polymorphism achieved by method overloading by 3 types.
+11.Package RemoveDuplicates
+	To remove duplicates from an array
+12.Package Sorting
+	Sorting techniques like Insertion Sort, Selection Sort, Merge Sort, Bubble Sort
+		

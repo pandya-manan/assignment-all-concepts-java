@@ -18,7 +18,8 @@ public class EmployeeDriver {
 	
 	public static Employee updateSalaryBasedOnEmployeeId(List<Employee> employees,long employeeId)
 	{
-		Employee impactedEmployee=new Employee();
+		Employee impactedEmployee=null;
+//		=new Employee();
 		for(Employee employee:employees)
 		{
 			if(employee.getEmpId()==employeeId)

@@ -115,7 +115,7 @@ public class LinkedList {
 	/* Insert node any position, checking if possible , no invalid positions allowed
      * Traverse completely, change the reference [previous]->[current]->[new]->[next]
      */
-	public Node InsertPos(Node headIncoming, int position, int data) {
+	public Node InsertPosition(Node headIncoming, int position, int data) {
         Node head = headIncoming;
         if (position<1)
         {
@@ -174,6 +174,8 @@ public class LinkedList {
         nodeIncoming = previous;
         return nodeIncoming;
     }
+	
+	
 	
 }
 	
