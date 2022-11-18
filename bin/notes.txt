@@ -25,4 +25,13 @@ Assignments of Week1 and Week2
 	To remove duplicates from an array
 12.Package Sorting
 	Sorting techniques like Insertion Sort, Selection Sort, Merge Sort, Bubble Sort
-		
+13.Package name collection.framework
+	Implemented the tasks on collections posted on slack channel.
+	Implement CRUD operations on Product using Map collections.
+	Create a set of Products [show that records are unique based on id].
+	Sort Product list by a) Price  b) Name c) id
+14. Package com.streamapi.practice
+	Implemented the tasks on stream api posted on slack channel.
+	Using Stream API find all the Products having  productPrice < maxPrice.
+	Using Stream API find all Products expiring by this month . [add suitable fields to Product POJO].
+	Find 5 oldest and newest Products using Stream API [add suitable fields to Product POJO]		
